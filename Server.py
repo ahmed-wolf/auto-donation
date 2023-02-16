@@ -1,5 +1,10 @@
 from socket import *
 from threading import Thread
+import serial
+
+port = "COM3"
+baud_rate = 9600
+Arduino = serial.Serial(port , baud_rate , timeout=1)
 
 def SendProto(conn, d):
     # send dictionary lingth:
@@ -65,6 +70,11 @@ def TH(target, args=[]):
         thread = Thread(target=target, args=args)
         thread.start()
 
+def F1(conn):
+    payload = RecvProto(conn)
+    x = payload['phone']; y = payload['msg']
+    Arduino.o.write(x); Arduino.o.write(y)
+
 class ServerHandle:
     # Server Initiators / Server Runners:
     def CloseConnection(self, conn, port, addr):
@@ -81,9 +91,7 @@ class ServerHandle:
                 code = conn.recv(1)
                 # Requests:
                 if code == chr(1).encode('utf-8'):
-                    payload = RecvProto(conn)
-                    print(payload['name'])
-                    print(payload['age'])
+                    F1(conn)
                 elif code == b'':
                     self.CloseConnection(conn, port, addr)
                     break
