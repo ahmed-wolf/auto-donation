@@ -68,9 +68,11 @@ port = int(conn.recv(1024))
 server = socket(AF_INET, SOCK_STREAM)
 server.connect((gethostbyname(gethostname()), port))
 
-server.send(chr(1).encode('utf-8'))
 
-SendProto(server, {
-    'name': 'Ahmed',
-    'age': 16
-})
+# phone: '05687657899087', msg = 'text'
+def SendMSG(phone, msg): 
+    server.send(chr(1).encode('utf-8'))
+    SendProto(server, {
+        'phone': phone,
+        'msg':   msg
+    })
