@@ -1,0 +1,121 @@
+<!-- <div class="people-section-table">
+
+          <table id="nophone-table" class="table table-striped table-hover text-center" style="width:100%">
+           
+            <thead>
+                <tr>
+                  <th class="text-center" style="font-size : 25px ; color: #60cd12 !important;"> عدد أفراد العائلة  </th>
+
+                  <th class="text-center" style="font-size : 25px ; color: #60cd12 !important;"> العنوان </th>
+
+                    <th class="text-center" style="font-size : 25px ; color: #60cd12 !important;">  الاسم </th>
+
+
+                </tr>
+            </thead>
+           
+            <tbody style="color: #60cd12 !important;">
+
+                <tr >
+                    <td >
+                      <button type="button" class="btn-close" aria-label="Close" data-bs-toggle="modal" data-bs-target="#exampleModal" ></button>
+                      <span> 8 </span>
+                    </td>
+                  
+                    <td >
+                      <span> غزة  </span>
+                    </td>           
+                    
+                    <td >
+                      <span> احمد </span>
+                    </td>
+
+
+                    
+                </tr>
+               
+                <tr>
+                  <td >
+                    <button type="button" class="btn-close" aria-label="Close" data-bs-toggle="modal" data-bs-target="#exampleModal" ></button>
+                    <span> 8 </span>
+                  </td>
+                
+                  <td >
+                    <span> غزة  </span>
+                  </td>    
+                  
+                  <td >
+                    <span> احمد </span>
+                  </td>                  </tr>
+             
+             
+             
+             
+             
+              <tr>
+                <td >
+                  <button type="button" class="btn-close" aria-label="Close" data-bs-toggle="modal" data-bs-target="#exampleModal" ></button>
+                  <span> 8 </span>
+                </td>
+              
+                <td >
+                  <span> غزة  </span>
+                </td>          
+                
+                <td >
+                  <span> احمد </span>
+                </td>             
+              
+              </tr>
+         
+           
+           
+           
+            <tr>
+              <td >
+                <button type="button" class="btn-close" aria-label="Close" data-bs-toggle="modal" data-bs-target="#exampleModal" ></button>
+                <span> 8 </span>
+              </td>
+            
+              <td >
+                <span> غزة  </span>
+              </td>           
+              
+              <td >
+                <span> احمد </span>
+              </td>             
+            
+            </tr>
+               
+
+
+            </tbody>
+       
+          </table>
+
+          <div class="adding-area align-self-end " id="special-adding-area" >
+           
+            <div class=" mb-5">
+            
+              <form class="row  special-input-area" id="special-bottom-adding-area">
+                <button class="btn btn-outline-secondary col-12" id="button-addon3" type="submit">اضافة</button>
+                <input   id="text-box" type="text" placeholder="الاسم" aria-label="First name" class="form-control col-12 text-center text-box">
+                <input  id="text-box2" type="text" placeholder="العنوان" aria-label="Last name" class="form-control col-12 text-center text-box">
+                <input  id="text-box3" type="text" placeholder="عدد افراد العائلة" aria-label="Last name" class="form-control col-12 text-center text-box">
+             
+              </form>     
+        </div>
+   -->
+  
+        <!-- <div class="toast-container position-fixed  p-3 ">
+          <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header" style="background-color:#061738 ;">
+              <img src="/images/organization/people.png" class="rounded me-2" alt="...">
+              <strong class="me-auto" style="color: #60cd12;"> ملاحظة جديدة </strong>
+              <i  id="close-button" type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></i>
+            </div>
+            <div class="toast-body text-center" style="background-color:#03262c ; color: #60cd12 !important;">
+              لقد تم اضافة شخص جديد الى الجدول 
+            </div>
+          </div>
+        </div> -->
