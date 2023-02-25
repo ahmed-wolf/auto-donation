@@ -1,11 +1,11 @@
 from socket import *
-# import serial
+import serial
 
 IP = gethostbyname(gethostname())
 
-# port = "COM3"
-# baud_rate = 9600
-# Arduino = serial.Serial(port , baud_rate , timeout=1)
+port = "COM3"
+baud_rate = 9600
+Arduino = serial.Serial(port , baud_rate , timeout=1)
 
 def SendProto(conn, d):
     # send dictionary lingth:
@@ -80,8 +80,8 @@ def ServerConnection():
         num = payload['num']
         msg = payload['msg']
         print(num, '        ', msg)
-        # Arduino.write(num)
-        # Arduino.write(msg)
+        Arduino.write(num)
+        Arduino.write(msg)
 
 if __name__ == '__main__':
     ServerConnection()
