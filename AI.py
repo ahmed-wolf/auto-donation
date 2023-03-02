@@ -1,14 +1,13 @@
 import pandas as pd, os
 import tensorflow as tf
-print('*')
 
 dftrain = pd.read_csv('train.csv') # training data
 dfeval = pd.read_csv('eval.csv') # testing data
 print(dftrain.head())
 print(dfeval.head())
 
-y_train = dftrain.pop('percentage')
-y_eval = dfeval.pop('percentage')
+y_train = dftrain.pop('result')
+y_eval = dfeval.pop('result')
 
 NUMERIC_COLUMNS = ['need_scale', 'desire', 'distance', 'last_receiving_date']
 
@@ -36,6 +35,8 @@ result = linear_est.evaluate(eval_input_fn)  # get model metrics/stats by testin
 
 os.system('cls')
 
+print(result['accuracy'])
+
 result = list(linear_est.predict(eval_input_fn))
 
 Array = []
@@ -44,3 +45,9 @@ for i in result:
   Array.append(i['probabilities'][1])
 
 print(Array)
+
+print(dfeval.values.tolist()[Array.index(max(Array))])
+print(dfeval.values.tolist()[Array.index(min(Array))])
+
+print('AI Initiated...')
+
