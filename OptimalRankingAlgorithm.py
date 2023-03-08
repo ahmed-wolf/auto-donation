@@ -117,9 +117,9 @@ class OptimalRankingAlgorithm:
 
 
 model = OptimalRankingAlgorithm()
-data_train = pd.read_csv(r'C:\Users\lenovo\Desktop\train.csv')
+data_train = pd.read_csv(r'train.csv')
 model.train(data_train)
-data_eval = pd.read_csv(r'C:\Users\lenovo\Desktop\eval.csv')
+data_eval = pd.read_csv(r'eval.csv')
 result = model.eval(data_eval)
 print('Result:\n')
 for i in result:
