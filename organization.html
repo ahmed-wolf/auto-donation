@@ -735,18 +735,15 @@ height: 50px;
   <div class="toast-container position-fixed  p-3 ">
     <div id="liveToast-special" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 
-
       <div class="toast-header-special " style=" padding: 5px 4px; background-color:#061738 !important ;     display: flex;
       justify-content: space-between; align-items: center;">
      
-      <img src="{% static 'img/organization/people.png' %}" class="rounded me-2" alt="...">
-      <strong class="me-auto strong-special"> ملاحظة جديدة</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="background-color: #60cd12 !important;"></button>
-   
+        <img src="{% static 'img/organization/people.png' %}" class="rounded me-2" alt="...">
+        <strong class="me-auto strong-special" style="color: #60cd12; width: 100%;text-align: right;padding-right: 5px;"> ملاحظة جديدة</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="background-color: #60cd12 !important;"></button>
+    
       </div>
-
-
-      <div class="toast-body-special" style="background-color:#03262c; padding: 10px 0 !important;">
+      <div class="toast-body-special" style="background-color:#03262c; padding: 10px 5px !important;color: #60cd12; text-align: right;">
         virualt body text 
       </div>
     </div>
@@ -792,8 +789,6 @@ const toastbody_special = document.getElementsByClassName("toast-body-special")[
   toastbody_special.textContent = body ; 
   liveToast_special2.show()
 }
-toast_apearing( "598486" , " 555");
-toast_apearing( "598486" , " 555");
 </script>
 
 
@@ -846,34 +841,7 @@ toast_apearing( "{{tost_hader}}" , " {{tost_body}}");
 
     console.log(phonelis)
   </script>
-  <style>
-    .toast-container{
- transform: scale(1.5 , 1.5) !important;
- position: absolute !important;
- left: 80px !important;
- bottom: 8px !important;
 
-}
-.toast-header, .toast-header-special i{
-    background-color:#60cd12 !important;
-}
-.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback):not(button){
-    position: absolute !important;
-    left: 80px !important;
-    bottom: 8px !important;
-}
-
-@media (max-width:767px){
-    .toast-container{
-        transform: scale(1 , 1.5) !important;
-        position: absolute !important;
-        left: -3px !important;
-        bottom: 8px !important
-       
-       }
-    
-}
-  </style>
 </body>
 
 </html>
